@@ -4,7 +4,6 @@ import { Icon } from '@/components/iconify-icon';
 import { links } from '@/lib/constants/links';
 import { Button } from '@nextui-org/button';
 import { Link } from '@nextui-org/link';
-import { cn } from '@nextui-org/theme';
 
 export default function Home() {
   return (
@@ -34,6 +33,8 @@ export default function Home() {
         </Button>
       </div>
     </div>
+  );
+}
   );
 }
           as={Link}
