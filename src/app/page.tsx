@@ -1,8 +1,27 @@
-import { Icon } from '@/components/iconify-icon';
-import { links } from '@/lib/constants/links';
+import { Icon } from '@/components/iconify-icon'; 
+import { links } from '@/lib/constants/links'; 
 import { Button } from '@nextui-org/button';
 
 export default function Home() {
+  // ここで直接定義
+  const LP_GRID_ITEMS = [
+    {
+      title: "高速開発",
+      description: "Next.js と Tailwind CSS により素早く UI を構築できます。",
+      icon: "⚡️",
+    },
+    {
+      title: "高パフォーマンス",
+      description: "最適化されたビルドと SSR によって高速に動作します。",
+      icon: "🚀",
+    },
+    {
+      title: "モダンな設計",
+      description: "最新の React 19 API と型安全な開発環境を提供します。",
+      icon: "✨",
+    },
+  ];
+
   return (
     <>
       <section className="bg-white dark:bg-gray-900">
@@ -34,6 +53,18 @@ export default function Home() {
             {LP_GRID_ITEMS.map((singleItem) => (
               <div key={singleItem.title} className="flex flex-col items-center justify-center text-center">
                 <div className="bg-primary-100 dark:bg-primary-900 mb-4 flex size-10 items-center justify-center rounded-full p-1.5 text-blue-700 lg:size-12">
+                  {singleItem.icon}
+                </div>
+                <h3 className="mb-2 text-xl font-bold dark:text-white">{singleItem.title}</h3>
+                <p className="text-gray-500 dark:text-gray-400">{singleItem.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
                   {singleItem.icon}
                 </div>
                 <h3 className="mb-2 text-xl font-bold dark:text-white">{singleItem.title}</h3>
