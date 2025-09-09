@@ -4,15 +4,20 @@ import { Icon } from '@/components/iconify-icon';
 import { links } from '@/lib/constants/links';
 import { Button } from '@nextui-org/button';
 import { Link } from '@nextui-org/link';
+import { cn } from '@nextui-org/theme';
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-3xl flex flex-col text-center gap-4 md:gap-6">
+    <div
+      className={cn(
+        'mx-auto max-w-3xl flex flex-col text-center gap-4 md:gap-6'
+      )}
+    >
       <h1 className="w-full text-4xl md:text-5xl font-black tracking-tight">
-        Java&統合版クロスプレイ{' '}
+        Java&統合版クロスプレイ
         <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
           UrMoknCraft
-        </span>{' '}
+        </span>
         Server
       </h1>
       <div className="flex justify-center gap-2">
@@ -34,6 +39,7 @@ export default function Home() {
       </div>
     </div>
   );
+}
 }
   );
 }
