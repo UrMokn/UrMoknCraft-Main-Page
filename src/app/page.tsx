@@ -21,7 +21,7 @@ export default function Home() {
             </Button>
             <Button
               href="https://vercel.com/new/git/external?repository-url=https://github.com/Blazity/next-enterprise"
-              intent="secondary"
+              color="secondary"
             >
               Deploy Now
             </Button>
