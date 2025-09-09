@@ -7,7 +7,7 @@ import { Link } from '@nextui-org/link';
 import { cn } from '@nextui-org/theme';
 import type { HTMLAttributes } from 'react';
 
-export function default Home() {
+export default function Home() {
   return (
     <div
       className={cn(
